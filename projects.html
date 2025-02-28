@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Peppe's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Peppe</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="studies.html">Studies</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>A showcase of my technical work and innovations</p>
+        </div>
+    </section>
+
+    <section id="project-categories">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Projects</button>
+                <button class="filter-btn" data-category="ai-ml">AI & Machine Learning</button>
+                <button class="filter-btn" data-category="robotics">Robotics</button>
+                <button class="filter-btn" data-category="data-science">Data Science</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- AI-Based Grouting Robot -->
+                <div class="project-item animate-on-scroll" id="grouting-robot" data-category="ai-ml robotics">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="AI-Based Grouting Robot">
+                    </div>
+                    <div class="project-content">
+                        <h2>AI-Based Grouting Robot</h2>
+                        <p class="project-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">Computer Vision</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Developed an autonomous robot capable of precisely applying grouting materials in construction settings using reinforcement learning algorithms and computer vision.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Real-time environment mapping and obstacle detection</li>
+                                <li>Adaptive pressure control system for consistent material application</li>
+                                <li>Custom reinforcement learning model for optimal path planning</li>
+                                <li>Computer vision system for quality assessment of completed work</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>PyTorch, ROS, Python, C++, Custom hardware sensors, NVIDIA Jetson</p>
+                            
+                            <h3>Results</h3>
+                            <p>Increased grouting efficiency by 45% compared to manual methods while maintaining higher precision and consistency. Successfully deployed in 3 commercial construction projects.</p>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-file-alt"></i> Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crypto Time Series Forecasting -->
+                <div class="project-item animate-on-scroll" id="crypto-forecasting" data-category="ai-ml data-science">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Crypto Time Series Forecasting">
+                    </div>
+                    <div class="project-content">
+                        <h2>Crypto Time Series Forecasting</h2>
+                        <p class="project-tags">
+                            <span class="tag">Time Series</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Finance</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Built an advanced time series forecasting system for cryptocurrency price prediction using ensemble methods combining LSTM neural networks and gradient boosting algorithms.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Multi-feature input processing including market sentiment analysis</li>
+                                <li>Custom feature engineering for financial time series data</li>
+                                <li>Ensemble model combining deep learning and traditional ML approaches</li>
+                                <li>Backtesting framework for strategy validation</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>TensorFlow, XGBoost, Python, pandas, NumPy, AWS SageMaker</p>
+                            
+                            <h3>Results</h3>
+                            <p>Achieved 87% directional accuracy for short-term price movements, significantly outperforming baseline models. Model predictions were successfully used to inform trading strategies.</p>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-chart-line"></i> View Results</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Vision for Quality Control -->
+                <div class="project-item animate-on-scroll" id="quality-control-cv" data-category="ai-ml">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Computer Vision for Quality Control">
+                    </div>
+                    <div class="project-content">
+                        <h2>Computer Vision for Quality Control</h2>
+                        <p class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Manufacturing</span>
+                            <span class="tag">Deep Learning</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Designed and implemented an automated quality control system using computer vision and deep learning to detect defects in manufacturing parts with high accuracy.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Real-time defect detection and classification</li>
+                                <li>Custom CNN architecture optimized for small defect detection</li>
+                                <li>Integrated with production line machinery for automated rejection</li>
+                                <li>Data collection pipeline for continuous model improvement</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>PyTorch, OpenCV, Python, CUDA, Industrial cameras, Edge computing devices</p>
+                            
+                            <h3>Results</h3>
+                            <p>Reduced defect escape rate by 95% compared to manual inspection. System processes over 2,000 parts per hour with 99.3% accuracy in detecting critical defects.</p>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-file-alt"></i> Technical Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Irrigation System -->
+                <div class="project-item animate-on-scroll" data-category="robotics data-science">
+                    <div class="project-image">
+                        <img src="assets/project4.jpg" alt="Smart Irrigation System">
+                    </div>
+                    <div class="project-content">
+                        <h2>Smart Irrigation System</h2>
+                        <p class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Environmental</span>
+                            <span class="tag">Embedded Systems</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Developed an intelligent irrigation system that optimizes water usage based on soil conditions, weather forecasts, and plant-specific requirements.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Wireless sensor network for distributed data collection</li>
+                                <li>Predictive watering algorithms based on multiple data sources</li>
+                                <li>Mobile app for monitoring and manual control</li>
+                                <li>Energy-efficient design with solar power integration</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>Arduino, Raspberry Pi, Python, Node.js, MQTT, Custom PCB design</p>
+                            
+                            <h3>Results</h3>
+                            <p>Reduced water consumption by up to 40% while improving plant health metrics in test deployments. System currently deployed in 5 agricultural test sites.</p>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-images"></i> Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <h3>Peppe's Portfolio</h3>
+                <p>Innovation through engineering and AI</p>
+            </div>
+            <ul class="social-links">
+                <li><a href="https://github.com/pepperumo" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:pepperumo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Peppe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const category = button.getAttribute('data-category');
+                    
+                    projectItems.forEach(item => {
+                        if (category === 'all') {
+                            item.style.display = 'grid';
+                        } else {
+                            const itemCategories = item.getAttribute('data-category');
+                            if (itemCategories && itemCategories.includes(category)) {
+                                item.style.display = 'grid';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

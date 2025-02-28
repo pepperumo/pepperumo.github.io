@@ -5,46 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peppe's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Peppe's Portfolio</h1>
-        <p>Mechanical Engineer | Data Scientist | AI Enthusiast</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Peppe</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="studies.html">Studies</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1>Hi, I'm Peppe</h1>
+                <p class="subtitle">Mechanical Engineer | Data Scientist | AI Enthusiast</p>
+                <p>I specialize in machine learning, artificial intelligence, and robotics, creating innovative solutions to complex problems.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn">View My Work</a>
+                    <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Peppe! I specialize in machine learning, AI, and robotics.</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content animate-on-scroll">
+                <div class="about-text">
+                    <p>I'm a Mechanical Engineer with a passion for AI and data science. With expertise in machine learning algorithms, deep learning, and robotics, I develop intelligent systems that solve real-world problems.</p>
+                    <p>My approach combines technical expertise with creative problem-solving to deliver innovative solutions across different industries. I'm constantly learning and exploring new technologies to stay at the forefront of AI advancements.</p>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Programming</h3>
+                            <p>Python, JavaScript, C++, MATLAB</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>AI & ML</h3>
+                            <p>TensorFlow, PyTorch, scikit-learn, Computer Vision</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <p>Git, Docker, AWS, ROS</p>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="experience.html" class="btn">My Experience</a>
+                        <a href="studies.html" class="btn btn-outline">Education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>🔹 AI-Based Grouting Robot</h3>
-            <p>Developing an autonomous robot using reinforcement learning.</p>
-            <a href="https://github.com/pepperumo/your-project-repo">View on GitHub</a>
+    <section id="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="card-container">
+                <div class="card animate-on-scroll">
+                    <img src="assets/project1.jpg" alt="AI-Based Grouting Robot" class="card-image">
+                    <div class="card-content">
+                        <h3>AI-Based Grouting Robot</h3>
+                        <p>Developing an autonomous robot using reinforcement learning for precise application in construction settings.</p>
+                        <div class="project-links">
+                            <a href="projects.html#grouting-robot" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <img src="assets/project2.jpg" alt="Crypto Time Series Forecasting" class="card-image">
+                    <div class="card-content">
+                        <h3>Crypto Time Series Forecasting</h3>
+                        <p>Using LSTMs and XGBoost for cryptocurrency price predictions with advanced feature engineering.</p>
+                        <div class="project-links">
+                            <a href="projects.html#crypto-forecasting" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <img src="assets/project3.jpg" alt="Computer Vision for Quality Control" class="card-image">
+                    <div class="card-content">
+                        <h3>Computer Vision for Quality Control</h3>
+                        <p>Implementing deep learning models for defect detection in manufacturing processes.</p>
+                        <div class="project-links">
+                            <a href="projects.html#quality-control-cv" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-buttons">
+                <a href="projects.html" class="btn">View All Projects</a>
+            </div>
         </div>
-        <div class="project">
-            <h3>🔹 Crypto Time Series Forecasting</h3>
-            <p>Using LSTMs and XGBoost for cryptocurrency price predictions.</p>
-            <a href="https://github.com/pepperumo/your-project-repo">View on GitHub</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:pepperumo@gmail.com">pepperumo@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/pepperumo">github.com/pepperumo</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Peppe. All Rights Reserved.</p>
+        <div class="container footer-content">
+            <div>
+                <h3>Peppe's Portfolio</h3>
+                <p>Innovation through engineering and AI</p>
+            </div>
+            <ul class="social-links">
+                <li><a href="https://github.com/pepperumo" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:pepperumo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Peppe. All Rights Reserved.</p>
+        </div>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
