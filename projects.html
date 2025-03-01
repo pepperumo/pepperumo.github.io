@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Peppe's Portfolio</title>
+    <title>Projects | Giuseppe Rumore's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,12 @@
 <body>
     <header>
         <div class="container header-content">
-            <a href="index.html" class="logo">Peppe</a>
+            <a href="index.html" class="logo">Giuseppe</a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="studies.html">Studies</a></li>
-                    <li><a href="experience.html">Experience</a></li>
+                    
                     <li><a href="projects.html" class="active">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -47,7 +47,7 @@
                 <button class="filter-btn active" data-category="all">All Projects</button>
                 <button class="filter-btn" data-category="ai-ml">AI & Machine Learning</button>
                 <button class="filter-btn" data-category="robotics">Robotics</button>
-                <button class="filter-btn" data-category="data-science">Data Science</button>
+                <button class="filter-btn" data-category="mechanical">Mechanical Engineering</button>
             </div>
         </div>
     </section>
@@ -55,149 +55,150 @@
     <section id="projects-grid">
         <div class="container">
             <div class="projects-container">
-                <!-- AI-Based Grouting Robot -->
-                <div class="project-item animate-on-scroll" id="grouting-robot" data-category="ai-ml robotics">
+                <!-- Genetic Algorithm for Structural Optimization -->
+                <div class="project-item animate-on-scroll" id="genetic-algorithm" data-category="ai-ml mechanical">
                     <div class="project-image">
-                        <img src="assets/project1.jpg" alt="AI-Based Grouting Robot">
+                        <img src="assets/project1.jpg" alt="Genetic Algorithm for Structural Optimization">
                     </div>
                     <div class="project-content">
-                        <h2>AI-Based Grouting Robot</h2>
+                        <h2>Genetic Algorithm for Structural Optimization</h2>
                         <p class="project-tags">
-                            <span class="tag">Robotics</span>
-                            <span class="tag">Reinforcement Learning</span>
-                            <span class="tag">Computer Vision</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Genetic Algorithms</span>
+                            <span class="tag">CAD</span>
+                            <span class="tag">FEM</span>
                         </p>
                         <div class="project-description">
-                            <p>Developed an autonomous robot capable of precisely applying grouting materials in construction settings using reinforcement learning algorithms and computer vision.</p>
+                            <p>Developed an AI-driven optimization framework using genetic algorithms to automatically generate and refine mechanical component designs that meet specific performance criteria and material constraints.</p>
                             
                             <h3>Key Features</h3>
                             <ul>
-                                <li>Real-time environment mapping and obstacle detection</li>
-                                <li>Adaptive pressure control system for consistent material application</li>
-                                <li>Custom reinforcement learning model for optimal path planning</li>
-                                <li>Computer vision system for quality assessment of completed work</li>
+                                <li>Multi-objective optimization for balancing weight, strength, and cost</li>
+                                <li>Integration with CAD systems for automated design generation</li>
+                                <li>Automated FEM analysis loop for performance validation</li>
+                                <li>Parameter encoding for complex mechanical structures</li>
                             </ul>
                             
                             <h3>Technologies</h3>
-                            <p>PyTorch, ROS, Python, C++, Custom hardware sensors, NVIDIA Jetson</p>
+                            <p>Python, DEAP, CAD API integration (CATIA), ANSYS for FEM analysis, Custom evolutionary operators</p>
                             
                             <h3>Results</h3>
-                            <p>Increased grouting efficiency by 45% compared to manual methods while maintaining higher precision and consistency. Successfully deployed in 3 commercial construction projects.</p>
+                            <p>Achieved 25% weight reduction in critical components while maintaining structural integrity and manufacturing feasibility. Solution converged 60% faster than traditional optimization approaches.</p>
                             
                             <div class="project-links">
-                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="https://github.com/pepperumo" class="btn"><i class="fas fa-code"></i> View Code</a>
                                 <a href="#" class="btn"><i class="fas fa-file-alt"></i> Case Study</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Crypto Time Series Forecasting -->
-                <div class="project-item animate-on-scroll" id="crypto-forecasting" data-category="ai-ml data-science">
+                <!-- Reinforcement Learning for Robotic Control -->
+                <div class="project-item animate-on-scroll" id="reinforcement-learning" data-category="ai-ml robotics">
                     <div class="project-image">
-                        <img src="assets/project2.jpg" alt="Crypto Time Series Forecasting">
+                        <img src="assets/project2.jpg" alt="Reinforcement Learning for Robotic Control">
                     </div>
                     <div class="project-content">
-                        <h2>Crypto Time Series Forecasting</h2>
+                        <h2>Reinforcement Learning for Robotic Control</h2>
                         <p class="project-tags">
-                            <span class="tag">Time Series</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Finance</span>
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">Robotics</span>
+                            <span class="tag">ROS2</span>
                         </p>
                         <div class="project-description">
-                            <p>Built an advanced time series forecasting system for cryptocurrency price prediction using ensemble methods combining LSTM neural networks and gradient boosting algorithms.</p>
+                            <p>Built an advanced reinforcement learning framework for training robotic systems to perform complex manipulation tasks with minimal human supervision, using a combination of simulation and real-world learning.</p>
                             
                             <h3>Key Features</h3>
                             <ul>
-                                <li>Multi-feature input processing including market sentiment analysis</li>
-                                <li>Custom feature engineering for financial time series data</li>
-                                <li>Ensemble model combining deep learning and traditional ML approaches</li>
-                                <li>Backtesting framework for strategy validation</li>
+                                <li>Custom reward functions for precision manipulation tasks</li>
+                                <li>Sim-to-real transfer techniques to minimize reality gap</li>
+                                <li>Integration with ROS2 for real-time control and monitoring</li>
+                                <li>Behavior cloning from human demonstrations</li>
                             </ul>
                             
                             <h3>Technologies</h3>
-                            <p>TensorFlow, XGBoost, Python, pandas, NumPy, AWS SageMaker</p>
+                            <p>Python, PyTorch, ROS2, Gazebo simulation, OpenAI Gym, Custom Robotics Hardware</p>
                             
                             <h3>Results</h3>
-                            <p>Achieved 87% directional accuracy for short-term price movements, significantly outperforming baseline models. Model predictions were successfully used to inform trading strategies.</p>
+                            <p>Robot achieved 92% success rate on complex assembly tasks after training, transferring effectively from simulation to real-world application with minimal additional tuning.</p>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/pepperumo" class="btn"><i class="fas fa-code"></i> View Code</a>
+                                <a href="#" class="btn"><i class="fas fa-video"></i> Demo Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Water Turbine Design -->
+                <div class="project-item animate-on-scroll" id="water-turbine" data-category="mechanical">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Floating Water Turbine Design">
+                    </div>
+                    <div class="project-content">
+                        <h2>Floating Water Turbine System</h2>
+                        <p class="project-tags">
+                            <span class="tag">Sustainable Energy</span>
+                            <span class="tag">Fluid Mechanics</span>
+                            <span class="tag">CAD Design</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Designed a floating water turbine nacelle system for energy generation or water pumping in underprivileged regions, focusing on durability, efficiency, and ease of maintenance with minimal infrastructure requirements.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Self-stabilizing floating platform design</li>
+                                <li>Optimized turbine blade geometry for low-flow conditions</li>
+                                <li>Modular construction for easy assembly and maintenance</li>
+                                <li>Integrated mechanical water pump option or electrical generator</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>CATIA for 3D modeling, ANSYS for fluid flow and structural simulation, Sustainable materials analysis</p>
+                            
+                            <h3>Results</h3>
+                            <p>The prototype demonstrated energy generation capabilities in water flows as low as 0.5m/s, with potential to provide water pumping or electricity for small communities with minimal maintenance requirements.</p>
+                            
+                            <div class="project-links">
+                                <a href="#" class="btn"><i class="fas fa-images"></i> View Gallery</a>
+                                <a href="#" class="btn"><i class="fas fa-file-alt"></i> Technical Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Testing Platform for Hydronic Systems -->
+                <div class="project-item animate-on-scroll" id="testing-platform" data-category="mechanical data-science">
+                    <div class="project-image">
+                        <img src="assets/project4.jpg" alt="Testing Platform for Hydronic Systems">
+                    </div>
+                    <div class="project-content">
+                        <h2>Data-Driven Testing Platform for Hydronic Systems</h2>
+                        <p class="project-tags">
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Mechanical Systems</span>
+                            <span class="tag">Automated Testing</span>
+                        </p>
+                        <div class="project-description">
+                            <p>Developed a sophisticated testing platform that combines mechanical engineering with data science techniques to evaluate and optimize the performance of heating and hydronic systems under various operating conditions.</p>
+                            
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Automated test sequence execution with variable parameters</li>
+                                <li>Real-time data acquisition and processing system</li>
+                                <li>Statistical analysis for performance prediction and anomaly detection</li>
+                                <li>Digital twin implementation for comparing actual vs. expected behavior</li>
+                            </ul>
+                            
+                            <h3>Technologies</h3>
+                            <p>Python for data analysis, Custom mechanical test fixtures, Sensor arrays, Industrial PLCs, Machine learning for pattern recognition</p>
+                            
+                            <h3>Results</h3>
+                            <p>The platform identified optimization opportunities that resulted in 15% efficiency improvements and reduced testing time by 40% compared to traditional methods, while generating comprehensive performance datasets.</p>
                             
                             <div class="project-links">
                                 <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
                                 <a href="#" class="btn"><i class="fas fa-chart-line"></i> View Results</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Computer Vision for Quality Control -->
-                <div class="project-item animate-on-scroll" id="quality-control-cv" data-category="ai-ml">
-                    <div class="project-image">
-                        <img src="assets/project3.jpg" alt="Computer Vision for Quality Control">
-                    </div>
-                    <div class="project-content">
-                        <h2>Computer Vision for Quality Control</h2>
-                        <p class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">Manufacturing</span>
-                            <span class="tag">Deep Learning</span>
-                        </p>
-                        <div class="project-description">
-                            <p>Designed and implemented an automated quality control system using computer vision and deep learning to detect defects in manufacturing parts with high accuracy.</p>
-                            
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Real-time defect detection and classification</li>
-                                <li>Custom CNN architecture optimized for small defect detection</li>
-                                <li>Integrated with production line machinery for automated rejection</li>
-                                <li>Data collection pipeline for continuous model improvement</li>
-                            </ul>
-                            
-                            <h3>Technologies</h3>
-                            <p>PyTorch, OpenCV, Python, CUDA, Industrial cameras, Edge computing devices</p>
-                            
-                            <h3>Results</h3>
-                            <p>Reduced defect escape rate by 95% compared to manual inspection. System processes over 2,000 parts per hour with 99.3% accuracy in detecting critical defects.</p>
-                            
-                            <div class="project-links">
-                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
-                                <a href="#" class="btn"><i class="fas fa-file-alt"></i> Technical Paper</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Smart Irrigation System -->
-                <div class="project-item animate-on-scroll" data-category="robotics data-science">
-                    <div class="project-image">
-                        <img src="assets/project4.jpg" alt="Smart Irrigation System">
-                    </div>
-                    <div class="project-content">
-                        <h2>Smart Irrigation System</h2>
-                        <p class="project-tags">
-                            <span class="tag">IoT</span>
-                            <span class="tag">Environmental</span>
-                            <span class="tag">Embedded Systems</span>
-                        </p>
-                        <div class="project-description">
-                            <p>Developed an intelligent irrigation system that optimizes water usage based on soil conditions, weather forecasts, and plant-specific requirements.</p>
-                            
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Wireless sensor network for distributed data collection</li>
-                                <li>Predictive watering algorithms based on multiple data sources</li>
-                                <li>Mobile app for monitoring and manual control</li>
-                                <li>Energy-efficient design with solar power integration</li>
-                            </ul>
-                            
-                            <h3>Technologies</h3>
-                            <p>Arduino, Raspberry Pi, Python, Node.js, MQTT, Custom PCB design</p>
-                            
-                            <h3>Results</h3>
-                            <p>Reduced water consumption by up to 40% while improving plant health metrics in test deployments. System currently deployed in 5 agricultural test sites.</p>
-                            
-                            <div class="project-links">
-                                <a href="#" class="btn"><i class="fas fa-code"></i> View Code</a>
-                                <a href="#" class="btn"><i class="fas fa-images"></i> Gallery</a>
                             </div>
                         </div>
                     </div>
@@ -209,17 +210,17 @@
     <footer>
         <div class="container footer-content">
             <div>
-                <h3>Peppe's Portfolio</h3>
+                <h3>Giuseppe Rumore's Portfolio</h3>
                 <p>Innovation through engineering and AI</p>
             </div>
             <ul class="social-links">
-                <li><a href="https://github.com/pepperumo" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="mailto:pepperumo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/pepperumo" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/giuseppe-rumore-b2599961" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:giuseppe.rumore91@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Peppe. All Rights Reserved.</p>
+            <p>&copy; 2024 Giuseppe Rumore. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peppe's Portfolio</title>
+    <title>Giuseppe's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,16 +11,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+        .profile-image {
+            flex-shrink: 0;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+        @media screen and (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-image {
+                width: 250px;
+                height: 250px;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container header-content">
-            <a href="index.html" class="logo">Peppe</a>
+            <a href="index.html" class="logo">Giuseppe Rumore</a>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="studies.html">Studies</a></li>
-                    <li><a href="experience.html">Experience</a></li>
+                    
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -37,9 +64,9 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content animate-on-scroll">
-                <h1>Hi, I'm Peppe</h1>
-                <p class="subtitle">Mechanical Engineer | Data Scientist | AI Enthusiast</p>
-                <p>I specialize in machine learning, artificial intelligence, and robotics, creating innovative solutions to complex problems.</p>
+                <h1>Hi, I'm Giuseppe Rumore</h1>
+                <p class="subtitle">Mechanical Engineer | Data Scientist | Robotics Specialist</p>
+                <p>My profile is like a Swiss knife, combining technical expertise in mechanical engineering, data science, and robotics. I create innovative solutions at the intersection of computational intelligence and real-world applications.</p>
                 <div class="hero-buttons">
                     <a href="projects.html" class="btn">View My Work</a>
                     <a href="contact.html" class="btn btn-outline">Get In Touch</a>
@@ -52,26 +79,69 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content animate-on-scroll">
+                <img src="assets/personal picture.jpeg" alt="Giuseppe Rumore" class="profile-image">
                 <div class="about-text">
-                    <p>I'm a Mechanical Engineer with a passion for AI and data science. With expertise in machine learning algorithms, deep learning, and robotics, I develop intelligent systems that solve real-world problems.</p>
-                    <p>My approach combines technical expertise with creative problem-solving to deliver innovative solutions across different industries. I'm constantly learning and exploring new technologies to stay at the forefront of AI advancements.</p>
+                    <p>As a Mechanical Engineer with a strong background in Data Science, Machine Learning, and Robotics, I bring a unique mix of analytical thinking and practical implementation to complex technical challenges.</p>
+                    
+                    <p>I have worked on projects that integrate Genetic Algorithms for optimizing structural designs, reinforcement learning for robotic control, and AI-driven manufacturing processes. With hands-on experience in Catia, Ansys Workbench, and ROS2, I navigate the intersection of engineering and artificial intelligence to push the boundaries of automation and efficiency.</p>
+                    
                     <div class="skills">
                         <div class="skill-category">
-                            <h3>Programming</h3>
-                            <p>Python, JavaScript, C++, MATLAB</p>
+                            <h3>Data Science & AI</h3>
+                            <p>Machine Learning, Deep Learning, Python, TensorFlow, PyTorch, Scikit-learn, Computer Vision, Reinforcement Learning</p>
                         </div>
                         <div class="skill-category">
-                            <h3>AI & ML</h3>
-                            <p>TensorFlow, PyTorch, scikit-learn, Computer Vision</p>
+                            <h3>Mechanical Engineering</h3>
+                            <p>CAD Design, FEA, Fluid Mechanics, Autodesk Inventor, ANSYS, CATIA</p>
                         </div>
                         <div class="skill-category">
-                            <h3>Tools</h3>
-                            <p>Git, Docker, AWS, ROS</p>
+                            <h3>Robotics</h3>
+                            <p>ROS2, Autonomous Systems, Path Planning, Robotic Control, Simulation</p>
                         </div>
                     </div>
                     <div class="about-buttons">
-                        <a href="experience.html" class="btn">My Experience</a>
                         <a href="studies.html" class="btn btn-outline">Education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise">
+        <div class="container">
+            <h2 class="section-title">Areas of Expertise</h2>
+            <div class="card-container">
+                <div class="card animate-on-scroll">
+                    <div class="card-content">
+                        <h3>Data Scientist & AI Engineer</h3>
+                        <ul>
+                            <li>Developing and optimizing AI-driven models for industrial and robotic applications</li>
+                            <li>Machine Learning, Deep Learning, and Data Analytics with Python</li>
+                            <li>Computer Vision and Reinforcement Learning for robotics and automation</li>
+                            <li>AI-driven CAD optimization and generative design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-content">
+                        <h3>Mechanical Engineer</h3>
+                        <ul>
+                            <li>Design and optimization of mechanical systems</li>
+                            <li>Structural analysis and simulation using FEA</li>
+                            <li>Fluid mechanics and thermal analysis</li>
+                            <li>Product development and prototyping</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-content">
+                        <h3>Robotics Engineer</h3>
+                        <ul>
+                            <li>Development of autonomous robotic systems</li>
+                            <li>Simulation and control using ROS2</li>
+                            <li>Integration of AI for robotic perception and decision-making</li>
+                            <li>Kinematics, dynamics, and path planning for mobile and industrial robots</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -122,17 +192,17 @@
     <footer>
         <div class="container footer-content">
             <div>
-                <h3>Peppe's Portfolio</h3>
+                <h3>Giuseppe Rumore's Portfolio</h3>
                 <p>Innovation through engineering and AI</p>
             </div>
             <ul class="social-links">
-                <li><a href="https://github.com/pepperumo" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="mailto:pepperumo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/pepperumo" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://linkedin.com/in/giuseppe-rumore-b2599961" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:giuseppe.rumore91@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Peppe. All Rights Reserved.</p>
+            <p>&copy; 2024 Giuseppe Rumore. All Rights Reserved.</p>
         </div>
     </footer>
 
